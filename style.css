@@ -17,6 +17,19 @@
     opacity: 0.9;
 }
 
+.trap {
+    overflow:auto;
+    width:100%;
+    white-space:nowrap;
+}
+
+.trap a {
+    text-decoration:none;
+    color:rgb(0, 128, 255);
+    padding: 10px 15px;
+    display:inline-block;;
+}
+
 .carousel-item {
     border: 3px solid white;
     border-right:2px solid white
@@ -4065,7 +4078,14 @@ del {
     padding:15px 15px;
     font-weight: 600;
     text-decoration: none;
-    ;
+    animation:list 0.5s ease-in-out;
+}
+
+@keyframes list {
+    0% {
+        opacity:0;
+        transform: translateX(-20px);
+    }
 }
 
 .list a:hover {
@@ -4397,7 +4417,10 @@ del {
         padding-top: 0;
     }
     .myTurn p {
-        padding:7px 20px
+        padding:60px 20px
+    }
+    .yeah {
+        margin-top:-40px !important
     }
 }
 
